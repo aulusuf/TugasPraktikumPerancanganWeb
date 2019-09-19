@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+  * {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  input[type=text],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+  input[type=email],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+  input[type=password],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  .ground{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(170deg, #1E90FF, #00FFFF);
+  }
+  .container {
+    border-radius: 5px;
+    background-color: #AFEEEE;
+    padding: 20px;
+    width: 500px;
+
+    display: -webkit-box, -webkit-flex, -moz-box, -moz-flexbox, flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    transform: translate (-50%, -50%);
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.15);
+  }
+
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+
+  .radiodio{
+    float: left;
+    margin-top: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  /* Hapus float setelah col-*/
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .Copyright{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 18px;
+  }
+
+  .Fotoku{
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    margin-bottom: 10px;
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Responsive layout - max width 600px*/
+  @media screen and (max-width: 600px) {
+    .col-25,
+    .col-75,
+    input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  </style>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="ground">
+    <div class="container">
+      <form>
+        <center><h2>Form</h2></center>
+        <br>
+        <div class="row">
+          <div class="col-25">
+            <label for="NAMA">Nama</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="NAMA" name="NAMA" placeholder="Muhammad Yusuf Auliya">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="NIM">NIM</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="NIM" name="NIM" placeholder="162410101138">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="ALAMAT">Alamat</label>
+          </div>
+          <div class="col-75">
+            <textarea id="ALAMAT" name="ALAMAT" placeholder="Alamat"
+            style="height:200px"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="EMAIL">Email</label>
+          </div>
+          <div class="col-75">
+            <input type="email" id="EMAIL" name="EMAIL" placeholder="Email">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="PASSWORD">Password</label>
+          </div>
+          <div class="col-75">
+            <input type="password" id="PASSWORD" name="PASSWORD" placeholder="Password">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="RADIO">Jenis Kelamin</label>
+          </div>
+          <div class="radiodio">
+            <input type="radio" checked="checked" name="radio">Laki-laki
+            <input type="radio" name="radio">Perempuan
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="Copyright">
+      <h3>© 162410101138</h3>
+    </div>
+    <div class="Foto">
+      <img src="yusuf.jpg" class="Fotoku">
+    </div>
+  </div>
+
+</body>
+
+</html>
